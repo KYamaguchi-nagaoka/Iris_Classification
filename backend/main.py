@@ -28,7 +28,7 @@ class IrisInput(BaseModel):
 
 # モデルの読み込み
 try:
-    with open('model', mode='rb') as f:
+    with open('model.pkl', mode='rb') as f:
         model = pickle.load(f)
 except Exception as e:
     print(f"Error loading model: {e}")
