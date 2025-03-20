@@ -6,7 +6,7 @@ services:
     startCommand: uvicorn backend.main:app --host 0.0.0.0 --port 8000
     includes:
       - backend/
-      - backend/model
+      - backend/model.pkl
   - type: static  # フロントエンドを静的サイトとしてデプロイ
     name: iris-frontend
     buildCommand: ""  # 静的ファイルにはビルドコマンド不要
