@@ -41,7 +41,7 @@
             };
             console.log("Input values:", inputData);
             try {
-                const response = await fetch("https://iris-backend-a4ok.onrender.com/", {
+                const response = await fetch("https://iris-backend-a4ok.onrender.com/predict", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
