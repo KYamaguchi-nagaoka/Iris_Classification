@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <h1>アヤメ分類予測</h1>
+        <div class="img">
+            <img id="setosa" src="img\setosa.jpg" >
+            <img id="versicolor" src="img\versicolor.jpg" >
+            <img id='virginica' src="img\virginica.jpg" >
+
+            <div id="Iris_info">
+                <label for="sepal_length">Sepal_length(cm)
+                    <input id='sepal_length'  type="number" step="0.1" min="4.3" max="7.9">
+                </label>
+                
+                <label for="sepal_width">Sepal_width(cm)
+                    <input id='sepal_width' type="number" step=0.1 min="2.0" max="4.4">
+                </label>
+                
+                <label for="petal_length">Petal_length(cm)
+                    <input id='petal_length' type="number" step=0.1 min="1.0" max="6.9">
+                </label>
+                
+                <label for="petal_width">Petal_width(cm)
+                    <input id='petal_width' type="number" step=0.1 min="0.1" max="2.5">
+                </label>
+
+                <span class="error-message" id="error"></span>
+                <button>Predict</button>
+                <br>
+                <span id="result"></span>
+                </div>
+
+        </div>
+    
+        <script src="app.js"></script>
+    </body>
+</html>

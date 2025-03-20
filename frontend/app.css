@@ -1,0 +1,68 @@
+h1{
+    text-align: center;
+    }
+label {
+    display: inline-block;
+     width: 150px;
+    vertical-align: top;
+}
+/* 全体を横並びにする */
+.container {
+    display: flex;
+    justify-content: flex-start; /* 左から順に並べる */
+    align-items: flex-start;    /* 上端を揃える */
+    gap: 20px; /* 画像と入力フィールド間のスペース */
+}
+
+/* 画像を横並びに配置する */
+
+.img {
+    display: flex;
+    flex-direction: row; /* 横並びに設定 */
+    gap: 10px; /* 画像間のスペース */
+   
+}
+
+.img img {
+    width: 300px; /* 画像の幅を設定 */
+    height: auto; /* アスペクト比を保つ */
+    opacity: 0.1; /* 透明度を少し下げる */
+    transition: opacity 0.3s; /* 透明度変更のアニメーション */
+}
+
+.img img:hover {
+    opacity: 1; /* ホバー時に不透明にする */
+}
+
+/* 入力フィールドとボタンのスタイル */
+#Iris_info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* フィールド間のスペース */
+}
+
+input {
+    width: 150px; /* 入力欄の幅 */
+    padding: 5px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049; /* ボタンのホバー時の色 */
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+}
