@@ -1,0 +1,13 @@
+services:
+  - type: web  # Webサービスとしてバックエンドをデプロイ
+    name: iris-backend
+    env: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port 8000
+    includes:
+      - backend/
+      - backend/model
+  - type: static  # フロントエンドを静的サイトとしてデプロイ
+    name: iris-frontend
+    buildCommand: ""  # 静的ファイルにはビルドコマンド不要
+    publishPath: frontend/
