@@ -1,3 +1,3 @@
 # Iris_Classification
 
-#### [アプリのリンク]https://iris-frontend-azns.onrender.com/
+#### [アプリはこちら](https://iris-frontend-azns.onrender.com/)
